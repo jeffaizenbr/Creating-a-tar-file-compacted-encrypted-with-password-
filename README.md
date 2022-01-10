@@ -5,6 +5,11 @@ Encrypt File
 ```bash
 tar cz diretorio/ | openssl enc -aes-256-cbc -e > /home/backups22-07-2021/encrypted.tar.gz.enc
 ```
+OR
+
+```bash
+tar cz teste/ | openssl enc -aes-256-cbc -e -k 123 > /tmp/encrypted.tar.gz.enc
+```
 
 Type password and make encrypted tar.gz.enc file
 
